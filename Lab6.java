@@ -1,4 +1,7 @@
 import java.util.Scanner;
+// notes 
+
+
 
 public class Lab6 {
 

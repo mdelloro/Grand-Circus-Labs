@@ -5,34 +5,35 @@ public class Lab1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String proceed = "y";
-		
-		Scanner scanner = new Scanner(System.in); //this allows user to input data
-	
-		System.out.println("Please type in Length:"); //display
-		float Length = scanner.nextInt(); // input code int or float
-		
-		System.out.println("Please type in Width:"); // display
-		float Width = scanner.nextInt(); // input code int or float or double
-		
-		float area = Length * Width; // function
-		System.out.println("Area:"); // display
-		System.out.println(area); // Answer
-		float Perimeter = (2 * Width) + (2 * Length); //function
-		System.out.println("Perimeter:"); // display
-		System.out.println(Perimeter); // Answer
-		
-		System.out.println("Continue? y/n");
-		proceed = scanner.next("y");
-		while (proceed.equalsIgnoreCase ("y"));
 		
 		
-		
-				
+		Scanner scanner = new Scanner(System.in);
+		String yesOrNo = "y";
+
+		while (yesOrNo.equalsIgnoreCase("y")) {
+
+			System.out.println("Measure Area, Perimeter, and Volume!");
+			System.out.println("What is the length?");
+			double Length = scanner.nextInt(); // this is a form of a string
+
+			System.out.println("what is the width?");
+			double Width = scanner.nextInt();
+
+			System.out.println("what is the height?");
+			double Height = scanner.nextInt();
+
+			System.out.println("The Area and Perimeter are:");
+			System.out.println("Perimeter:" + (2 * Length + 2 * Width) + "\r" + "Area:" + (Length * Width) + "\r"
+					+ "Volume:" + (Height * Width * Length));
+
+			System.out.println("Continue? (y/n): ");
+			yesOrNo = scanner.next();
+
+		}
 	}
-	    
+}    
 	
-}
+
 	
 	
 //camelcase
