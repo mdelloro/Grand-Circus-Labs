@@ -1,11 +1,22 @@
 package lab9;
 
+/**
+ * 
+ * 
+ * @author Administrator
+ *
+ *
+ */
 public class Circle {
 
 	private double radius; // the r is fromt he user input. the radius is the term you're going to use. 
 	public Circle(double r) { radius = r;
 	};
 
+	/**
+	 * returns circumference
+	 * 
+	 */
 	public double getCircumference() {
 		return 0.0;
 	};
